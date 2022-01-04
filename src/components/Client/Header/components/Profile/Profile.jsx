@@ -14,7 +14,6 @@ import { getAcessToken } from "../../../../../utils/getAccessToken";
 function Profile() {
   const navigate = useNavigate();
   const accountSlice = useSelector(selectMovieList);
-  console.log(accountSlice);
   const [openAccount, setOpenAccount] = useState(false);
   const [infoUser, setInfoUser] = useState({});
   const dispatch = useDispatch();
@@ -32,7 +31,6 @@ function Profile() {
   }, []);
 
   const onFinish = async (values) => {
-    console.log(values);
     const Data = {
       taiKhoan: values.taiKhoan,
       matKhau: infoUser.matKhau,
@@ -58,13 +56,12 @@ function Profile() {
     if (accountSlice) {
       setOpenAccount(false);
     }
-
   };
 
   const menu = (
     <Menu>
       <Menu.Item>
-        <Link to='/booking-history'>
+        <Link to="/booking-history">
           <span>History Booking</span>
         </Link>
       </Menu.Item>
@@ -125,7 +122,13 @@ function Profile() {
             </Form.Item>
             <Form.Item
               name="email"
-              rules={[{ required: true, message: "Email is not valid", type:'email' }]}
+              rules={[
+                {
+                  required: true,
+                  message: "Email is not valid",
+                  type: "email",
+                },
+              ]}
               label="Email "
               initialValue={infoUser?.email}
             >
@@ -133,9 +136,7 @@ function Profile() {
             </Form.Item>
             <Form.Item
               name="soDT"
-              rules={[
-                { required: true, message: "Phone number is required!" },
-              ]}
+              rules={[{ required: true, message: "Phone number is required!" }]}
               label="Phone Number "
               initialValue={infoUser?.soDT}
             >

@@ -76,7 +76,6 @@ const userSplice = createSlice({
         state.value = action.payload;
       })
       .addCase(addUserAsync.fulfilled, (state, action) => {
-        console.log(action.payload.data);
         state.value.unshift(action.payload.data);
       })
       .addCase(editUserAsync.fulfilled, (state, action) => {

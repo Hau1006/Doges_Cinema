@@ -61,7 +61,7 @@ function Showtimes(props) {
             }
         }
     });
-    //console.log(listTime)
+  
     const dsCumRapRender = dsCumRap.map(element => {
         let times = [];
         if (Object.keys(listTime).includes(element)) {
@@ -120,7 +120,7 @@ function Showtimes(props) {
         </Link>
     })();
 
-    //console.log('render');
+
     return (
         <>
             <div className={styles.Showtime}>

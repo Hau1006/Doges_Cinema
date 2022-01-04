@@ -28,7 +28,7 @@ function Seat() {
 
   useEffect(() => {
     // call api
-    console.log(params);
+
     dispatch(getSeatPlanAsync(params.id));
     // eslint-disable-next-line
   }, []);

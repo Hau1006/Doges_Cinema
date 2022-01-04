@@ -27,12 +27,10 @@ function Login() {
         let data = JSON.parse(localStorage.getItem("userInfo"))
         if (data) {
             let decodedToken = jwt_decode(data.accessToken)
-            console.log("Decoded Token", decodedToken);
             let currentDate = new Date();
 
             // JWT exp is in seconds
             if (decodedToken.exp * 1000 < currentDate.getTime()) {
-                console.log("Token expired.");
                 localStorage.removeItem("userInfo")
             } else {
                 if (data.maLoaiNguoiDung === 'QuanTri') {
@@ -55,7 +53,6 @@ function Login() {
         let flag = true;
         const msg = {};
         for (const [key, value] of Object.entries(ruleList)) {
-            // console.log(formRef.current[key], value);
             const res = validateOneElement(formRef.current[key], value);
             if (res) flag = false;
             msg[key] = res ?? "";

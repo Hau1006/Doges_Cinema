@@ -12,7 +12,6 @@ export const fetchMovieAsync = createAsyncThunk(
 export const EditAsyncMovies = createAsyncThunk(
   "movie/editmovie",
   async (data) => {
-    console.log(data);
     const res = await callApi(
       "QuanLyPhim/CapNhatPhimUpload",
       "POST",
@@ -25,7 +24,7 @@ export const EditAsyncMovies = createAsyncThunk(
         data: res.data,
       };
     }
-    // console.log(data.body);
+
     // return response.data;
   }
 );
@@ -59,7 +58,6 @@ export const postAsyncMovies = createAsyncThunk(
       data.body,
       data.token
     );
-    console.log(res);
     if (res?.status === 200) {
       return {
         status: res.status,
@@ -97,7 +95,6 @@ export const deleteMovieAsync = createAsyncThunk(
       data.body,
       data.token
     );
-    // console.log(res.status, res.data);
     if (res?.status === 200) {
       return {
         status: res.status,
@@ -121,9 +118,7 @@ const movieSplice = createSlice({
         state.movie = action.payload.reverse();
       })
       .addCase(EditAsyncMovies.fulfilled, (state, action) => {
-        console.log(action);
         const { data } = action.payload;
-        console.log(state.movie);
         if (state.movie.length > 0) {
           const index = state.movie.findIndex(
             (v, index) => v.maPhim === data.maPhim
@@ -134,7 +129,7 @@ const movieSplice = createSlice({
         }
       })
       .addCase(postAsyncMovies.fulfilled, (state, action) => {
-        console.log(action.payload.data);
+  
 
         state.movie.unshift(action.payload.data);
       })

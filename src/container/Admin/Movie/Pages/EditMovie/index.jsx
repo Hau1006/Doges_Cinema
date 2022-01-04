@@ -23,16 +23,13 @@ const EditMovie = () => {
   };
 
   const normFile = (e) => {
-    console.log("Upload event:", e);
     return e && e.fileList;
   };
   const props = {
     onChange({ file, fileList }) {
       if (file.status !== "uploading") {
-        console.log(file);
-        console.log(fileList);
         const obj = fileList[fileList.length - 1];
-        console.log(obj);
+
         setObjImageUpdate(obj.originFileObj);
       }
     },
@@ -46,8 +43,6 @@ const EditMovie = () => {
   };
 
   const onFinish = (values) => {
-    console.log(values);
-
     let formData = new FormData();
     formData.append("maPhim", valueEdit.maPhim); // done
     formData.append("tenPhim", values.movieName); //done
@@ -59,13 +54,13 @@ const EditMovie = () => {
     formData.append("ngayKhoiChieu", values.datepicker);
     formData.append("danhGia", "0");
     formData.append("File", objImageUpdate);
-    console.log(formData);
+
     const data = { body: formData, token: getAcessToken() };
-    console.log(data);
+
     dispatch(EditAsyncMovies(data));
     navigate(-1);
   };
-  console.log(fileList);
+
   return (
     <div
       style={{

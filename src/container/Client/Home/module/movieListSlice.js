@@ -28,12 +28,12 @@ export const movieListSlice = createSlice({
     buider
       .addCase(getMovieListAsync.pending, (state) => {
         state.status = "loading";
-        console.log("loading");
+  
       })
       .addCase(getMovieListAsync.fulfilled, (state, action) => {
         state.status = "success";
         state.movieListData = action.payload;
-        console.log("work OK", typeof state.movieListData);
+      
       });
 
   },

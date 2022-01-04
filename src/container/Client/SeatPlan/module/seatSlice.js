@@ -21,7 +21,7 @@ const initialState = {
 export const postBookingAsync = createAsyncThunk(
     'module/postBooking',
     async (model) => {
-        console.log(initialState.accessToken);
+       
         const res = await postBooking(model[0], model[1].accessToken).then(data => {
             return data;
         });

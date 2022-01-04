@@ -29,7 +29,6 @@ function UserForm() {
   const location = useLocation();
   const [isAdd, setIsAdd] = useState(false);
   const [dataForm, setDataForm] = useState(() => {
-    console.log(location.state);
     if (location.state) {
       return { ...location.state, maNhom: "GP02", soDt: location.state.soDt }; // thêm 1 truong soDt vi data là soDt
     }

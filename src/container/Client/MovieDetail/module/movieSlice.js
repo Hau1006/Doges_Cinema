@@ -1,42 +1,40 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { getMovieDetail } from './movieApi';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { getMovieDetail } from "./movieApi";
 
 const initialState = {
-    movieData: [],
-    status: '',
+  movieData: [],
+  status: "",
 };
 
 export const getMovieAsync = createAsyncThunk(
-    'module/getMovieDetail',
-    async (movieId) => {
-        const response = await getMovieDetail(movieId).then(data => {
-            return data;
-        });
-        // The value we return becomes the `fulfilled` action payload
-        return response.data;
-    }
+  "module/getMovieDetail",
+  async (movieId) => {
+    const response = await getMovieDetail(movieId).then((data) => {
+      return data;
+    });
+    // The value we return becomes the `fulfilled` action payload
+    return response.data;
+  }
 );
 
 export const movieSlice = createSlice({
-    name: 'movieDetail',
-    initialState,
-    reducers: {
-        reset: (state) => {
-            state.movieData = [];
-        }
+  name: "movieDetail",
+  initialState,
+  reducers: {
+    reset: (state) => {
+      state.movieData = [];
     },
-    extraReducers: (builder) => {
-        builder
-            .addCase(getMovieAsync.pending, (state) => {
-                state.status = 'loading';
-                //console.log('loading');
-            })
-            .addCase(getMovieAsync.fulfilled, (state, action) => {
-                state.status = 'success';
-                state.movieData = action.payload;
-                //console.log('done');
-            });
-    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(getMovieAsync.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(getMovieAsync.fulfilled, (state, action) => {
+        state.status = "success";
+        state.movieData = action.payload;
+      });
+  },
 });
 
 // create action

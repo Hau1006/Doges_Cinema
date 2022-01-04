@@ -121,7 +121,7 @@
    .DetailContent {
       margin-left: 0;
       margin-top: -70px;
-      
+      text-align: center;
    }
    .MovieTitle {
       line-height: 50px;
@@ -132,7 +132,7 @@
       text-align: center;
    }
    .TypeOfMovie {
-      margin-left: 210px;
+      margin-left: 0;
    }
    .Duration {
       justify-content: center;
@@ -163,7 +163,7 @@
    .DetailContent {
       margin-left: 0;
       margin-top: -70px;
-      
+      text-align: center;
    }
    .MovieTitle {
       line-height: 50px;
@@ -174,7 +174,7 @@
       text-align: center;
    }
    .TypeOfMovie {
-      margin-left: 200px;
+      margin-left: 0;
    }
    .Duration {
       justify-content: center;
@@ -204,6 +204,7 @@
    }
    .DetailContent {
       margin-left: 0;
+      text-align: center;
       margin-top: -70px;
    }
    .WrapperOther {
@@ -211,14 +212,11 @@
    }
    .MovieTitle {
       line-height: 50px;
-      text-align: center;
+      text-align: start;
       font-size: 39px;
    }
    .MovieLanguages {
       text-align: center;
-   }
-   .TypeOfMovie {
-      margin-left: 290px;
    }
    .Duration {
       justify-content: center;
@@ -250,6 +248,7 @@
       margin-left: 25%;
       margin-top: 0;
       line-height: 30px;
+      text-align: start;
    }
    .WrapperOther {
       margin-left: 35%;
@@ -261,9 +260,6 @@
    }
    .MovieLanguages {
       text-align: start;
-   }
-   .TypeOfMovie {
-      margin-left: 0;
    }
    .Duration {
       justify-content: start;
@@ -295,6 +291,7 @@
       margin-left: 25%;
       margin-top: 0;
       line-height: 30px;
+      text-align: start;
    }
    .WrapperOther {
       margin-left: 35%;
@@ -306,9 +303,6 @@
    }
    .MovieLanguages {
       text-align: start;
-   }
-   .TypeOfMovie {
-      margin-left: 0;
    }
    .Duration {
       justify-content: start;

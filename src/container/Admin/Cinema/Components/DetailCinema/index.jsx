@@ -39,7 +39,6 @@ function DetailCinema() {
         //     )
         // }
     ]
-    console.log(cinema);
 
     return (
         <Content className="site-layout" style={{ padding: '0 50px 40px 50px', marginTop: 64 }}>

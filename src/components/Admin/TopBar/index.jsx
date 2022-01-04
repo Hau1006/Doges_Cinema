@@ -24,7 +24,7 @@ function TopBar() {
         let data = JSON.parse(localStorage.getItem("userInfo"))
         if (data) {
             let decodedToken = jwt_decode(data.accessToken)
-            console.log("Decoded Token", decodedToken);
+           
             let currentDate = new Date();
 
             // JWT exp is in seconds

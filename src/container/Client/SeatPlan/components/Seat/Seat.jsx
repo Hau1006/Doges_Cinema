@@ -23,8 +23,7 @@ function Seat() {
     const modalVisible = useSelector(getModalVisible);
     const model = useSelector(getModel); // body data post api
 
-    // console.log(model[0].danhSachVe.length);
-    // console.log(model[1].accessToken);
+  
 
     function handleBooking() {
         if (selectedIndexArr.length !== 0) {
@@ -37,7 +36,7 @@ function Seat() {
         // handle event payment button
         if (model[0].danhSachVe.length !== 0 && model[1].accessToken !== null) {
             // call api
-            console.log(model[1].accessToken);
+        
             dispatch(postBookingAsync(model));
         }
     })

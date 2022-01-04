@@ -34,7 +34,7 @@ function MovieList() {
     (async () => {
       dispatch(fetchMovieAsync());
     })();
-  }, [dispatch,state]);
+  }, [dispatch, state]);
 
   const [visible, setVisible] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);

@@ -16,7 +16,7 @@ const AddMovie = () => {
     setComponentSize(size);
   };
   const normFile = (e) => {
-    console.log("Upload event:", e.fileList);
+
     return e && e.fileList;
   };
 

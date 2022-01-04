@@ -3,38 +3,34 @@ import { getMovieTicket } from "./filterBoxApi";
 
 const initialState = {
   movieTicketData: [],
-  status: 'false'
-}
+  status: "false",
+};
 
 export const getMovieTicketAsync = createAsyncThunk(
-  'module/getMovieTicket',
+  "module/getMovieTicket",
   async (maPhim) => {
-    const response = await getMovieTicket(maPhim).then(data => {
+    const response = await getMovieTicket(maPhim).then((data) => {
       return data;
     });
     return response.data;
   }
-)
+);
 
 export const movieTicketSlice = createSlice({
-  name: 'movieTicket',
+  name: "movieTicket",
   initialState,
-  reducers: {
-
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getMovieTicketAsync.pending, (state) => {
-        state.status = 'loading';
-        console.log('movieTicket loading');
+        state.status = "loading";
       })
       .addCase(getMovieTicketAsync.fulfilled, (state, action) => {
-        state.status = 'success';
+        state.status = "success";
         state.movieTicketData = action.payload;
-        console.log('movieTicket done');
-      })
-  }
-})
+      });
+  },
+});
 
 export const selectMovieTicket = (state) => state.movieTicket.movieTicketData;
 
