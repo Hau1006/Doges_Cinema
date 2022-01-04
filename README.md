@@ -8,4 +8,4 @@ Thành viên nhóm:
 
 Link trello: https://trello.com/b/zqYfJHyp/react-movie
 
-Link web đã deploy
+Link web đã deploy:
