@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5398077b.chunk.css",
+    "main.js": "/static/js/main.80d64547.chunk.js",
+    "main.js.map": "/static/js/main.80d64547.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8c604853.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8c604853.js.map",
+    "static/css/2.14d445f6.chunk.css": "/static/css/2.14d445f6.chunk.css",
+    "static/js/2.46e5cec2.chunk.js": "/static/js/2.46e5cec2.chunk.js",
+    "static/js/2.46e5cec2.chunk.js.map": "/static/js/2.46e5cec2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.14d445f6.chunk.css.map": "/static/css/2.14d445f6.chunk.css.map",
+    "static/css/main.5398077b.chunk.css.map": "/static/css/main.5398077b.chunk.css.map",
+    "static/js/2.46e5cec2.chunk.js.LICENSE.txt": "/static/js/2.46e5cec2.chunk.js.LICENSE.txt",
+    "static/media/Index.module.css": "/static/media/banner-img.5ab812e6.jpg",
+    "static/media/Footer.module.css": "/static/media/footer.929fb7a8.png",
+    "static/media/Banner.module.css": "/static/media/home-baner.3d557972.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c604853.js",
+    "static/css/2.14d445f6.chunk.css",
+    "static/js/2.46e5cec2.chunk.js",
+    "static/css/main.5398077b.chunk.css",
+    "static/js/main.80d64547.chunk.js"
+  ]
+}
