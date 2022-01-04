@@ -1,0 +1,50 @@
+.FooterSection {
+  background: url("../../../assets/images/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    background-color: #001232;
+}
+
+.FooterTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 0;
+  border-bottom: 1px solid white;
+}
+
+.IconList {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.Icon {
+  text-align: center;
+    margin: 0 10px 10px;
+    list-style: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid hsla(0,0%,76.1%,.397);
+    transition: all .5s;
+}
+
+.Icon:hover {
+  background-color: #001232;
+}
+
+.FooterBottom {
+  display: flex;
+  color: white;
+}
+
+.Author {
+  padding: 10px 0 40px;
+  font-weight: 600;
+  font-size: 16px;
+}

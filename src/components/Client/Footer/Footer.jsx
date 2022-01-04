@@ -1,31 +1,26 @@
 import React from 'react';
 import { FacebookOutlined, GoogleOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
-import './Footer.css';
+import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
+import brandImg from '../../../assets/images/brand.png'
 
 function Footer() {
   return (
-    <footer className="footer-section" id="contact">
-      <div className="container">
-        <div className="footer-top">
-          <ul className="social-icons ml-auto">
-            <li><FacebookOutlined /></li>
-            <li><TwitterOutlined /></li>
-            <li><GoogleOutlined /></li>
-            <li><InstagramOutlined /></li>
+    <footer className={styles.FooterSection} id="contact">
+      <div className="Container">
+        <div className={styles.FooterTop}>
+          <Link style={{paddingRight: '100px', paddingLeft: '10px'}} to='/'>
+            <img src={brandImg} alt='brand' />
+          </Link>
+          <ul className={styles.IconList}>
+            <li className={styles.Icon}><FacebookOutlined /></li>
+            <li className={styles.Icon}><TwitterOutlined /></li>
+            <li className={styles.Icon}><GoogleOutlined /></li>
+            <li className={styles.Icon}><InstagramOutlined /></li>
           </ul>
         </div>
-        <hr />
-        <div className="footer-bottom">
-          <div className="left">Copyright © 2021.All Rights Reserved By Doges</div>
-          <div className="links mb-0">
-            <ul className="contact-link">
-              <li>About</li>
-              <li>Terms of Use</li>
-              <li>Policy</li>
-              <li>FAQ</li>
-              <li>Feedback</li>
-            </ul>
-          </div>
+        <div className={styles.FooterBottom}>
+          <p className={styles.Author}>Copyright © 2021.All Rights Reserved By Doges</p>
         </div>
       </div>
     </footer>

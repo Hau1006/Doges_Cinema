@@ -21,7 +21,7 @@ function MovieList(props) {
   })
 
   return (
-    <div style={{ backgroundColor: '#001232', padding: '5px 0' }}>
+    <div style={{ backgroundColor: '#001232', padding: '150px 0', marginTop:"-205px", }}>
       <div className={`${styles.Container_Lg} ${styles.P_Lg_0}`}>
         <div className={styles.Content}>
           <div className={styles.Filter}>
