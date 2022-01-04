@@ -1,0 +1,48 @@
+@media (min-width: 992px) {
+  .P_Lg_0 {
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Container_Lg {
+    max-width: 1140px;
+  }
+}
+
+.Container_Lg {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Content {
+  margin: 80px 0;
+}
+
+.Filter {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 12px 10px;
+  background-color: #0e1661;
+}
+
+.SortBy {
+  margin-top: 0;
+}
+
+.Type {
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: turquoise;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

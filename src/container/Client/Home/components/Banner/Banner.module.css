@@ -1,0 +1,63 @@
+.Banner {
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+}
+
+.Banner_Bg {
+  background: url(https://boleto.vercel.app/static/media/banner.c09f9360.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.Banner_Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a1e5e;
+  opacity: 0.75;
+}
+
+.Banner_Content {
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Banner_Content p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.Container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Banner_Title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.Banner_Movie {
+  font-size: 60px;
+  font-weight: 700;
+  color: #31d7a9;
+  letter-spacing: 0;
+}

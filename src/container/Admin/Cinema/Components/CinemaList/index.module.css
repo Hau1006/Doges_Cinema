@@ -1,0 +1,10 @@
+.wrappedImg{
+    height: 45px;
+    width: 45px;
+}
+
+.wrappedImg img{
+    max-width: 45px;
+    max-height: 45px;
+}
+

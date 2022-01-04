@@ -1,0 +1,1 @@
+export const MONEY_RATE = 23850

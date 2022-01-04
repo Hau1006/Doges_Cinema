@@ -1,0 +1,21 @@
+
+.BtnTrailer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+.BtnTrailer:hover {
+  cursor: pointer;
+  color: black;
+  opacity: 1;
+}
+
+.CloseIcon {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  right: -40px;
+}

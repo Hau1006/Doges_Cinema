@@ -1,0 +1,11 @@
+.Main {
+   min-height: calc(100vh - 245px);
+   padding-top: 140px;
+}
+
+thead[class*="ant-table-thead"] th{
+   background-color: #0a1e5e !important;
+   color: white;
+   font-weight: 700;
+ }
+

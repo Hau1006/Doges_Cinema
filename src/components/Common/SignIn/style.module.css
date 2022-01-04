@@ -1,0 +1,92 @@
+.logn_page{
+    background: url(https://boleto.vercel.app/static/media/account-bg.409d0628.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block_login{
+    width: 540px;
+    /* height: 620px; */
+    margin: 60px 0px;
+    padding: 60px 45px;
+    background-color: rgba(68,90,153,.051);
+    box-shadow: 0 0 29.4px 0.6px rgb(0 0 0 / 50%);
+    /* font-size: 1.4rem; */
+}
+
+.header_login h1{
+    text-align: center;
+    color: white;
+}
+.text_danger{
+    color: red;
+}
+
+
+#form{
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form_group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 1.2rem
+    
+  }
+
+  .form_control:focus{
+    outline: none;
+    border-bottom: 1px solid red;
+  }
+  
+  .form_control{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #23334f;
+    padding-left: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+  }
+  .flex_end{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .flex_center{
+    display: flex;
+    justify-content: center;
+  }
+
+  .option_forgot{
+    margin-bottom: 30px;
+  }
+
+  .div_button{
+    text-align: center!important;
+    margin-top: 1.5rem!important;
+  }
+  
+  .div_button button{
+    background-image: -webkit-linear-gradient(169deg,#5560ff 17%,#aa52a1 63%,#ff4343);
+    padding: 10px 40px;
+    font-weight: 600;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all .5s;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  .div_button button:hover{
+      cursor: pointer;
+      opacity: 0.8;
+  }

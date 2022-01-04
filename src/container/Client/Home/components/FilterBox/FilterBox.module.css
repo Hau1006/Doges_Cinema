@@ -1,0 +1,169 @@
+@media (min-width: 992px) {
+  .Container_lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Container_lg {
+    max-width: 1140px;
+  }
+}
+
+.Container_lg {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Search {
+  background: linear-gradient(
+      90deg,
+      rgba(68, 47, 187, 0.801),
+      rgba(76, 16, 155, 0.555)
+    ),
+    url(https://boleto.vercel.app/static/media/ticket-bg01.f79eeed7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-top: -100px;
+  position: relative;
+  padding: 30px;
+}
+
+.p_0 {
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 960px) {
+  .Search,
+  .Content,
+  .Header {
+    margin-bottom: 40px;
+  }
+}
+
+.Content {
+  padding: 30px;
+}
+
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Col_9 {
+  max-width: 75%;
+  flex: 0 0 75%;
+}
+
+.Category {
+  font-size: 16px;
+  font-weight: 400;
+  color: #31d7a9;
+  letter-spacing: 1px;
+}
+
+.Title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.Col_3 {
+  max-width: 25%;
+  flex: 0 0 25%;
+}
+
+.Text_Right {
+  text-align: right;
+}
+
+.Btn_Gradient {
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+}
+.Btn_Gradient {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px #eee;
+}
+
+.Btn_Gradient:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.Col_12,
+.Col_Lg_3,
+.Col_Md_6,
+.Col_Sm_6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .Col_Sm_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .Mt_Sm_0 {
+    margin-top: -1px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .Col_Md_6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .Col_Lg_3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .Mt_Lg_0 {
+    margin-top: 0 !important;
+  }
+}
+
+.Col_12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.Type {
+  padding: 0 10px;
+  color: #31d7a9;
+}
+
+.Select {
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: hsla(0, 0%, 100%, 0.61);
+  font-size: 16px;
+  font-weight: 500;
+  color: #0a1e5e;
+  letter-spacing: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

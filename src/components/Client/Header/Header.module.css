@@ -1,0 +1,95 @@
+.Navbar {
+  background-color: #0a1e5e;
+  z-index: 99;
+  box-shadow: 0 9px 5px 0 rgb(0 0 0 / 20%);
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+
+  right: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(183 194 241);
+}
+
+.Menu {
+  align-items: center;
+  display: flex;
+}
+
+.Menu > span {
+  margin-right: 25px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Menu > span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.Brand:hover {
+  cursor: pointer;
+}
+
+/* @media (min-width: 768px) {
+  .navbar-expand-md {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+} */
+
+@media (min-width: 200px) {
+  .barsMenu {
+    display: block;
+  }
+  .Menu {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .barsMenu {
+    display: block;
+  }
+  .Menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .barsMenu {
+    display: none;
+  }
+  .Menu {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .barsMenu {
+    display: none;
+  }
+  .Menu {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .barsMenu {
+    display: none;
+  }
+  .Menu {
+    display: block;
+  }
+}
